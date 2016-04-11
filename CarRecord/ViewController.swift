@@ -10,6 +10,7 @@ import UIKit
 import MobileCoreServices
 
 class ViewController: UIViewController, OverlayDelegate {
+    @IBOutlet weak var containerView: UIView!
     var imagePickerController: UIImagePickerController!
     var overlayController: OverlayViewController!
     private var fileManager: FileManager!
