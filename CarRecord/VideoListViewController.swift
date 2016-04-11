@@ -7,9 +7,12 @@
 //
 
 import UIKit
+import AVFoundation
+import AVKit
 
 class VideoListViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     private var videoPaths = [String]()
+    private var videoResourcePaths = [String]()
     private let fileManager = FileManager()
     @IBOutlet weak var tableView: UITableView!
     override func viewDidLoad() {
@@ -21,7 +24,9 @@ class VideoListViewController: UIViewController, UITableViewDataSource, UITableV
     
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
-        videoPaths = fileManager.getVideoList()
+        let pathInfo = fileManager.getVideoList()
+        videoPaths = pathInfo.0
+        videoResourcePaths = pathInfo.1
     }
     
     @IBAction func clickedBackButton(sender: AnyObject) {
@@ -42,5 +47,19 @@ class VideoListViewController: UIViewController, UITableViewDataSource, UITableV
         return cell
     }
     
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        let resource = videoResourcePaths[indexPath.row]
+        print(resource)
+        playVideoResource(resource)
+    }
     
+    private func playVideoResource(resource: String) {
+        let videoURL = NSURL(fileURLWithPath: resource)
+        let player = AVPlayer(URL: videoURL)
+        let playerViewController = AVPlayerViewController()
+        playerViewController.player = player
+        presentViewController(playerViewController, animated: true) {
+            playerViewController.player!.play()
+        }
+    }
 }

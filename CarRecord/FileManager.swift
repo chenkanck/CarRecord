@@ -44,19 +44,21 @@ class FileManager {
         }
     }
     
-    func getVideoList() -> [String] {
+    func getVideoList() -> ([String], [String]) {
         var videoPaths: [String] = []
+        var videoFullPaths: [String] = []
         if let documentsDir = NSSearchPathForDirectoriesInDomains(.DocumentDirectory, .UserDomainMask, true).last {
             let videosDir = documentsDir.stringByAppendingString("/videos")
             var directory = ObjCBool(true)
             if fm.fileExistsAtPath(videosDir, isDirectory: &directory) {
                 do {
                     videoPaths = try fm.contentsOfDirectoryAtPath(videosDir)
+                    videoFullPaths = videoPaths.map { videosDir + "/" + $0 }
                 } catch {
                     print(error)
                 }
             }
         }
-        return videoPaths
+        return (videoPaths, videoFullPaths)
     }
 }
