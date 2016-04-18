@@ -9,18 +9,29 @@
 /* Begin PBXBuildFile section */
 		660674A91CB4C4A80004FD99 /* FileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 660674A81CB4C4A80004FD99 /* FileManager.swift */; };
 		660674AB1CBB60420004FD99 /* VideoListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 660674AA1CBB60420004FD99 /* VideoListViewController.swift */; };
+		660674B71CC44ED90004FD99 /* VideoRecordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 660674B51CC44ED90004FD99 /* VideoRecordViewController.swift */; };
+		660674B81CC44ED90004FD99 /* VideoRecordViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 660674B61CC44ED90004FD99 /* VideoRecordViewController.xib */; };
 		662AEFD41CB22D5D00509C42 /* OverlayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 662AEFD31CB22D5D00509C42 /* OverlayViewController.swift */; };
+		667C7F161CC46C40009C6CFE /* ViewUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 667C7F151CC46C40009C6CFE /* ViewUtils.m */; };
 		66DA22CC1C9FBEE20074E7BA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66DA22CB1C9FBEE20074E7BA /* AppDelegate.swift */; };
 		66DA22CE1C9FBEE20074E7BA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66DA22CD1C9FBEE20074E7BA /* ViewController.swift */; };
 		66DA22D11C9FBEE20074E7BA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66DA22CF1C9FBEE20074E7BA /* Main.storyboard */; };
 		66DA22D31C9FBEE20074E7BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 66DA22D21C9FBEE20074E7BA /* Assets.xcassets */; };
 		66DA22D61C9FBEE20074E7BA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66DA22D41C9FBEE20074E7BA /* LaunchScreen.storyboard */; };
+		C2E5501FD5A0D24A4A68CCB8 /* Pods_CarRecord.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E219BB07723432E5E17AE6F /* Pods_CarRecord.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		568BC27BFC9A440B7467AF42 /* Pods-CarRecord.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CarRecord.release.xcconfig"; path = "Pods/Target Support Files/Pods-CarRecord/Pods-CarRecord.release.xcconfig"; sourceTree = "<group>"; };
+		5E219BB07723432E5E17AE6F /* Pods_CarRecord.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CarRecord.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		660674A81CB4C4A80004FD99 /* FileManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileManager.swift; sourceTree = "<group>"; };
 		660674AA1CBB60420004FD99 /* VideoListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoListViewController.swift; sourceTree = "<group>"; };
+		660674B51CC44ED90004FD99 /* VideoRecordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoRecordViewController.swift; sourceTree = "<group>"; };
+		660674B61CC44ED90004FD99 /* VideoRecordViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VideoRecordViewController.xib; sourceTree = "<group>"; };
+		660674B91CC455F70004FD99 /* CarRecord-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CarRecord-Bridging-Header.h"; sourceTree = "<group>"; };
 		662AEFD31CB22D5D00509C42 /* OverlayViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OverlayViewController.swift; sourceTree = "<group>"; };
+		667C7F141CC46C40009C6CFE /* ViewUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewUtils.h; sourceTree = "<group>"; };
+		667C7F151CC46C40009C6CFE /* ViewUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewUtils.m; sourceTree = "<group>"; };
 		66DA22C81C9FBEE20074E7BA /* CarRecord.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CarRecord.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		66DA22CB1C9FBEE20074E7BA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		66DA22CD1C9FBEE20074E7BA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -28,6 +39,7 @@
 		66DA22D21C9FBEE20074E7BA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		66DA22D51C9FBEE20074E7BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		66DA22D71C9FBEE20074E7BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F704442FDF96E3640848B800 /* Pods-CarRecord.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CarRecord.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CarRecord/Pods-CarRecord.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,17 +47,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C2E5501FD5A0D24A4A68CCB8 /* Pods_CarRecord.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		22F95F883B69AFCF0CAA7943 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F704442FDF96E3640848B800 /* Pods-CarRecord.debug.xcconfig */,
+				568BC27BFC9A440B7467AF42 /* Pods-CarRecord.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		66DA22BF1C9FBEE20074E7BA = {
 			isa = PBXGroup;
 			children = (
 				66DA22CA1C9FBEE20074E7BA /* CarRecord */,
 				66DA22C91C9FBEE20074E7BA /* Products */,
+				22F95F883B69AFCF0CAA7943 /* Pods */,
+				DDA34E95D3468BEF2F9BF7F9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -66,11 +90,24 @@
 				66DA22CF1C9FBEE20074E7BA /* Main.storyboard */,
 				660674AA1CBB60420004FD99 /* VideoListViewController.swift */,
 				662AEFD31CB22D5D00509C42 /* OverlayViewController.swift */,
+				660674B51CC44ED90004FD99 /* VideoRecordViewController.swift */,
+				660674B61CC44ED90004FD99 /* VideoRecordViewController.xib */,
+				667C7F141CC46C40009C6CFE /* ViewUtils.h */,
+				667C7F151CC46C40009C6CFE /* ViewUtils.m */,
 				66DA22D21C9FBEE20074E7BA /* Assets.xcassets */,
 				66DA22D41C9FBEE20074E7BA /* LaunchScreen.storyboard */,
 				66DA22D71C9FBEE20074E7BA /* Info.plist */,
+				660674B91CC455F70004FD99 /* CarRecord-Bridging-Header.h */,
 			);
 			path = CarRecord;
+			sourceTree = "<group>";
+		};
+		DDA34E95D3468BEF2F9BF7F9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5E219BB07723432E5E17AE6F /* Pods_CarRecord.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -80,9 +117,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 66DA22DA1C9FBEE20074E7BA /* Build configuration list for PBXNativeTarget "CarRecord" */;
 			buildPhases = (
+				640650DF300A8FC2566F4CF3 /* Check Pods Manifest.lock */,
 				66DA22C41C9FBEE20074E7BA /* Sources */,
 				66DA22C51C9FBEE20074E7BA /* Frameworks */,
 				66DA22C61C9FBEE20074E7BA /* Resources */,
+				9C0C82D87879AC710D96B170 /* Embed Pods Frameworks */,
+				0BEDD3B04C4F367851E4D607 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -99,7 +139,7 @@
 		66DA22C01C9FBEE20074E7BA /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0720;
+				LastSwiftUpdateCheck = 0730;
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = kan;
 				TargetAttributes = {
@@ -135,10 +175,59 @@
 				66DA22D61C9FBEE20074E7BA /* LaunchScreen.storyboard in Resources */,
 				66DA22D31C9FBEE20074E7BA /* Assets.xcassets in Resources */,
 				66DA22D11C9FBEE20074E7BA /* Main.storyboard in Resources */,
+				660674B81CC44ED90004FD99 /* VideoRecordViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0BEDD3B04C4F367851E4D607 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CarRecord/Pods-CarRecord-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		640650DF300A8FC2566F4CF3 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		9C0C82D87879AC710D96B170 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CarRecord/Pods-CarRecord-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		66DA22C41C9FBEE20074E7BA /* Sources */ = {
@@ -148,8 +237,10 @@
 				662AEFD41CB22D5D00509C42 /* OverlayViewController.swift in Sources */,
 				66DA22CE1C9FBEE20074E7BA /* ViewController.swift in Sources */,
 				660674AB1CBB60420004FD99 /* VideoListViewController.swift in Sources */,
+				667C7F161CC46C40009C6CFE /* ViewUtils.m in Sources */,
 				66DA22CC1C9FBEE20074E7BA /* AppDelegate.swift in Sources */,
 				660674A91CB4C4A80004FD99 /* FileManager.swift in Sources */,
+				660674B71CC44ED90004FD99 /* VideoRecordViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,25 +349,44 @@
 		};
 		66DA22DB1C9FBEE20074E7BA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F704442FDF96E3640848B800 /* Pods-CarRecord.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/**";
 				INFOPLIST_FILE = CarRecord/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"$(inherited)",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = kan.CarRecord;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "CarRecord/CarRecord-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		66DA22DC1C9FBEE20074E7BA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 568BC27BFC9A440B7467AF42 /* Pods-CarRecord.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/**";
 				INFOPLIST_FILE = CarRecord/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"$(inherited)",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = kan.CarRecord;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "CarRecord/CarRecord-Bridging-Header.h";
 			};
 			name = Release;
 		};

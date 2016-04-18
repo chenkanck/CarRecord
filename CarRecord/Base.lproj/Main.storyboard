@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
@@ -81,15 +80,19 @@
                         <subviews>
                             <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mhF-4c-GFO">
                                 <rect key="frame" x="147" y="437" width="240" height="128"/>
-                                <connections>
-                                    <segue destination="q1u-7E-dQV" kind="embed" id="JEX-W1-nWV"/>
-                                </connections>
                             </containerView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="14I-ux-AlH">
                                 <rect key="frame" x="286" y="195" width="30" height="30"/>
                                 <state key="normal" title="List"/>
                                 <connections>
                                     <segue destination="AkE-Ot-hQR" kind="presentation" id="jMT-wk-0b1"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1oY-PS-nL5">
+                                <rect key="frame" x="34" y="34" width="40" height="30"/>
+                                <state key="normal" title="Video"/>
+                                <connections>
+                                    <action selector="clickedVideoButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NLc-ds-HyZ"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kKd-h9-hhX">
@@ -114,6 +117,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="257" y="644"/>
         </scene>
         <!--Overlay View Controller-->
         <scene sceneID="9At-7p-XNd">
@@ -169,21 +173,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ynV-nS-op3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1138" y="130"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="mnR-mh-hqH">
-            <objects>
-                <viewController id="q1u-7E-dQV" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="fkb-T0-ese">
-                        <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="RDS-Gz-Dk2" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="785" y="683"/>
+            <point key="canvasLocation" x="1542" y="-5"/>
         </scene>
     </scenes>
 </document>

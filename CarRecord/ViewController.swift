@@ -27,14 +27,34 @@ class ViewController: UIViewController, OverlayDelegate {
         imagePickerController.videoMaximumDuration = 300
         imagePickerController.delegate = self
         
+//        UIDevice.currentDevice().beginGeneratingDeviceOrientationNotifications()
+//        NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(ViewController.orientationChanged(_:)), name: UIDeviceOrientationDidChangeNotification, object: nil)
         fileManager = FileManager()
+    }
+    @IBAction func clickedVideoButton(sener: AnyObject) {
+        let vc = VideoRecordViewController(nibName: "VideoRecordViewController", bundle: nil)
+        presentViewController(vc, animated: true, completion: nil)
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
+    
+    func orientationChanged(notification: NSNotification) {
+        let orientation = UIDevice.currentDevice().orientation
+        var transform = self.view.transform
+        if orientation == UIDeviceOrientation.LandscapeLeft {
+            transform = CGAffineTransformRotate(transform, CGFloat(M_PI_2))
+            overlayController.view.transform = transform
+        } else if orientation == UIDeviceOrientation.LandscapeRight {
+            transform = CGAffineTransformRotate(transform, CGFloat(-M_PI_2))
+            overlayController.view.transform = transform
+        } else {
+            overlayController.view.transform = transform
+        }
+        overlayController.view.layoutIfNeeded()
+    }
 
     @IBAction func record(sender: AnyObject) {
         presentViewController(imagePickerController, animated: true, completion: nil)

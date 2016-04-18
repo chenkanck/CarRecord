@@ -38,4 +38,8 @@ class OverlayViewController: UIViewController {
     @IBAction func clickedLeftButton(sender: AnyObject) {
         delegate?.overlayDidClickedLeftButton(self)
     }
+    
+    override func shouldAutorotate() -> Bool {
+        return true
+    }
 }
