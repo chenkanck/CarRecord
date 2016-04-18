@@ -10,6 +10,7 @@ import UIKit
 
 class VideoRecordViewController: UIViewController {
     var camera: LLSimpleCamera!
+    private var fileManager = FileManager()
     @IBOutlet weak var closeButton: UIButton!
     @IBOutlet weak var recordButton: UIButton!
     var errorLabel: UILabel?
@@ -70,10 +71,25 @@ class VideoRecordViewController: UIViewController {
         dismissViewControllerAnimated(true, completion: nil)
     }
     
-    
     @IBAction func clickedRecordButton(sender: AnyObject) {
+        if !camera.recording {
+            recordButton.setTitle("Stop", forState: .Normal)
+                        camera.startRecordingWithOutputUrl(NSURL(fileURLWithPath: newFileUrl))
+        } else {
+            recordButton.setTitle("Start", forState: .Normal)
+            camera.stopRecording({ (camera, outputFileUrl, error) in
+            })
+        }
     }
     //MARK: -
+    private var newFileUrl: String {
+        guard let url = fileManager.videoDirectoryUrl else { fatalError() }
+        let dateFormatter = NSDateFormatter()
+        dateFormatter.dateFormat = "yyyy-MM-dd-hh-mm"
+        let fileName = dateFormatter.stringFromDate(NSDate())
+        return url + "/" + fileName + ".mp4"
+    }
+    
     override func viewWillLayoutSubviews() {
         super.viewWillLayoutSubviews()
         camera.view.frame = view.contentBounds

@@ -9,6 +9,10 @@
 import Foundation
 
 class FileManager {
+    var videoDirectoryUrl: String? {
+        return savingPath()
+    }
+    
     private let fm = NSFileManager.defaultManager()
     private func savingPath() -> String? {
         if let documentsDir = NSSearchPathForDirectoriesInDomains(.DocumentDirectory, .UserDomainMask, true).last {
